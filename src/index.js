@@ -13,17 +13,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('combined'));
 
 // Template engine
-app.engine('handlebars', exphbs({
-  extname: ".hbs"
-}));
+app.engine(
+    'handlebars',
+    exphbs({
+        extname: '.hbs',
+    }),
+);
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'resources/views'));
 
 // route
 route(app);
 
-
-
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+    console.log(`Example app listening on port ${port}`);
 });

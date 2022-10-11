@@ -1,5 +1,5 @@
 var express = require('express');
-var route = express.Router();
+var router = express.Router();
 
 const newsController = require('../app/controllers/NewsController');
 
