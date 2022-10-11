@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/giabaodnvn/nodejs_blog#readme",
   "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,scss,md}": "prettier --write"
   },
   "dependencies": {
     "express": "^4.18.1",
